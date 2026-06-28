@@ -264,35 +264,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // EDUCATION TIMELINE
 // ===============================
 
+// ===============================
+// ACCORDION EDUCATION TIMELINE
+// ===============================
 const educationCards = document.querySelectorAll(".edu-card");
-const educationDetails = document.querySelectorAll(".edu-info");
 
 educationCards.forEach(card => {
+    // Select the upper header area inside our item wrapper
+    const summaryBlock = card.querySelector(".edu-card-summary");
 
-    card.addEventListener("click", () => {
+    summaryBlock.addEventListener("click", (e) => {
+        // Prevent event bubble interference checks
+        e.stopPropagation();
 
-        educationDetails.forEach(detail => {
+        const isCurrentlyActive = card.classList.contains("active");
 
-            detail.classList.remove("active");
-
-        });
-
+        // Close all cards to ensure a clean accordion movement layout baseline
         educationCards.forEach(item => {
-
-            item.style.borderColor = "rgba(255,255,255,.08)";
-            item.style.background = "rgba(255,255,255,.04)";
-            item.style.transform = "translateX(0px)";
-
+            item.classList.remove("active");
+            const detailBlock = item.querySelector(".edu-info");
+            if (detailBlock) detailBlock.style.maxHeight = null;
         });
 
-        card.style.borderColor = "#00d9ff";
-        card.style.background = "rgba(0,217,255,.08)";
-        card.style.transform = "translateX(12px)";
-
-        const target = card.getAttribute("data-target");
-
-        document.getElementById(target).classList.add("active");
-
+        // If the clicked element wasn't open, toggle it open now
+        if (!isCurrentlyActive) {
+            card.classList.add("active");
+            const targetDetail = card.querySelector(".edu-info");
+            if (targetDetail) {
+                // Dynamically calculates the high density content height space bounds
+                targetDetail.style.maxHeight = targetDetail.scrollHeight + "px";
+            }
+        }
     });
-
 });

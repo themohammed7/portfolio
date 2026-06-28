@@ -175,11 +175,11 @@
 
 </section>
 
-<div class="scroll-indicator">
+<!-- <div class="scroll-indicator">
 
     <span></span>
 
-</div>
+</div> -->
 
    <section id="about" class="about">
 
@@ -231,119 +231,71 @@ My goal is to become an AI Engineer who creates scalable, intelligent and innova
 
 <h2>Education Journey</h2>
 
-<p>Click any card and scroll to view details</p>
+<p>Click any card to view details</p>
 
 </div>
 
 <div class="education-timeline">
 
-<div class="edu-card" data-target="ssc">
+    
+    <div class="edu-card" data-target="ssc">
+        <div class="edu-card-summary">
+            <div class="year">2020</div>
+            <h3>SSC</h3>
+            <p>81%</p>
+        </div>
+        
+        
+        <div id="ssc" class="edu-info">
+            <p><strong>School :</strong> Maulana Husain Ahmad Madni High School</p>
+            <p><strong>Board :</strong> GSEB</p>
+            <p><strong>Passing Year :</strong> 2020</p>
+            <p><strong>Percentage :</strong> 81%</p>
+            <a href="documents/ssc-result.jpeg" target="_blank" class="edu-btn">View Certificate</a>
+        </div>
+    </div>
 
-<div class="year">2020</div>
+    
+    <div class="edu-card" data-target="hsc">
+        <div class="edu-card-summary">
+            <div class="year">2022</div>
+            <h3>HSC Science</h3>
+            <p>71%</p>
+        </div>
+        
+       
+        <div id="hsc" class="edu-info">
+            <p><strong>School :</strong> Munshi Manubarvala Memorial Charitable Trust</p>
+            <p><strong>Board :</strong> GSEB</p>
+            <p><strong>Stream :</strong> Science</p>
+            <p><strong>Passing Year :</strong> 2022</p>
+            <p><strong>Percentage :</strong> 71%</p>
+            <a href="documents/hsc-result.jpeg" target="_blank" class="edu-btn">View Certificate</a>
+        </div>
+    </div>
 
-<h3>SSC</h3>
-
-<p>81%</p>
-
-</div>
-
-<div class="edu-card" data-target="hsc">
-
-<div class="year">2022</div>
-
-<h3>HSC Science</h3>
-
-<p>71%</p>
-
-</div>
-
-<div class="edu-card" data-target="be">
-
-<div class="year">2022 - 2026</div>
-
-<h3>B.E Computer Engineering</h3>
-
-<p>CGPA 8.94</p>
-
-</div>
-
-</div>
-
-<div class="education-details">
-
-<div id="ssc" class="edu-info active">
-
-<h3>SSC</h3>
-
-<p><strong>School :</strong> Maulana Husain Ahmad Madni High School</p>
-
-<p><strong>Board :</strong> GSEB</p>
-
-<p><strong>Passing Year :</strong> 2020</p>
-
-<p><strong>Percentage :</strong> 81%</p>
-
-<a href="documents/ssc-result.jpeg"
-target="_blank"
-class="edu-btn">
-
-View Certificate
-
-</a>
-
-</div>
-
-<div id="hsc" class="edu-info">
-
-<h3>HSC Science</h3>
-
-<p><strong>School :</strong> Munshi Manubarvala Memorial Charitable Trust</p>
-
-<p><strong>Board :</strong> GSEB</p>
-
-<p><strong>Stream :</strong> Science</p>
-
-<p><strong>Passing Year :</strong> 2022</p>
-
-<p><strong>Percentage :</strong> 71%</p>
-
-<a href="documents/hsc-result.jpeg"
-target="_blank"
-class="edu-btn">
-
-View Certificate
-
-</a>
+    
+    <div class="edu-card" data-target="be">
+        <div class="edu-card-summary">
+            <div class="year">2022 - 2026</div>
+            <h3>B.E Computer Engineering</h3>
+            <p>CGPA 8.94</p>
+        </div>
+        
+        
+        <div id="be" class="edu-info">
+            <p><strong>College :</strong> Sardar Patel College of Engineering</p>
+            <p><strong>University :</strong> GTU</p>
+            <p><strong>Branch :</strong> Computer Engineering</p>
+            <p><strong>CGPA :</strong> 8.94</p>
+            <p><strong>Passing Year :</strong> 2026</p>
+            <a href="documents/be-result.jpeg" target="_blank" class="edu-btn">View Certificate</a>
+        </div>
+    </div>
 
 </div>
 
-<div id="be" class="edu-info">
 
-<h3>Bachelor of Engineering</h3>
-
-<p><strong>College :</strong> Sardar Patel College of Engineering</p>
-
-<p><strong>University :</strong> GTU</p>
-
-<p><strong>Branch :</strong> Computer Engineering</p>
-
-<p><strong>CGPA :</strong> 8.94</p>
-
-<p><strong>Passing Year :</strong> 2026</p>
-
-<a href="documents/be-result.jpeg"
-target="_blank"
-class="edu-btn">
-
-View Certificate
-
-</a>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
@@ -384,26 +336,13 @@ View Certificate
 
         </h4>
 
+        <!-- REPLACE IN PROJECT 1 -->
         <p class="project-description">
-
-            ResearchMind is an AI-powered Autonomous Multi-Agent Research Platform
-    that automates the complete research lifecycle using specialized AI agents.
-    The system performs intelligent web search, extracts relevant information,
-    generates structured research reports, evaluates report quality, and delivers
-    downloadable results through an intuitive Streamlit interface, significantly
-    reducing manual research effort and improving productivity.
-
+            Autonomous multi-agent research assistant that automates web search, information extraction, and report generation using specialized AI workflows.
         </p>
 
         <div class="highlight-box">
-
-            ⚡ Built an autonomous Multi-Agent AI platform where specialized
-AI agents collaborate to perform web search, content extraction,
-research report generation, and quality evaluation. Integrated
-LangChain, Mistral AI, Tavily Search, BeautifulSoup, and Streamlit
-to create an intelligent end-to-end research automation workflow
-capable of producing high-quality AI-assisted research reports.
-
+            ⚡ Built a collaborative agent workspace using LangChain, Mistral AI, and Streamlit to automate deep web scraping and report orchestration.
         </div>
 
         <div class="tech-tags">
@@ -504,40 +443,13 @@ capable of producing high-quality AI-assisted research reports.
 
         </h4>
 
+        
         <p class="project-description">
-
-            An advanced AI-powered research platform that processes PDFs,
-            audio recordings, and YouTube videos using a Multi-Agent
-            architecture.
-
-            The system performs intelligent document retrieval,
-            semantic search,
-            transcription,
-            summarization,
-            and context-aware question answering through
-            Retrieval-Augmented Generation (RAG),
-            enabling users to interact with knowledge using
-            natural language.
-
+            Advanced AI platform processing multi-format data via multi-agent RAG architecture for intelligent document, audio, and video semantic analysis.
         </p>
 
         <div class="highlight-box">
-
-            ⚡ Developed an end-to-end Multi-Agent AI Research System
-            integrating PDF RAG,
-            Audio & YouTube Transcription,
-            Semantic Search,
-            Intelligent Chat,
-            and Agent-based task orchestration.
-
-            The platform automates document analysis,
-            meeting summarization,
-            contextual question answering,
-            and intelligent knowledge retrieval using
-            Large Language Models,
-            Vector Search,
-            and modern AI workflows.
-
+            ⚡ Engineered multi-modal pipelines using LangChain, Whisper API, and ChromaDB vector search for context-aware question answering.
         </div>
 
         <div class="tech-tags">
@@ -641,27 +553,13 @@ capable of producing high-quality AI-assisted research reports.
 
         </h4>
 
+        
         <p class="project-description">
-
-            VisionTrack is an AI-powered attendance management platform
-            that leverages Computer Vision and Machine Learning to
-            automate employee attendance using real-time face recognition.
-            The system provides secure self-registration, role-based
-            dashboards, attendance analytics, absentee monitoring,
-            and intelligent employee management through a modern
-            Streamlit interface.
-
+            AI-powered employee presence tracking dashboard using computer vision and machine learning for automated registration and real-time roll calls.
         </p>
 
         <div class="highlight-box">
-
-            ⚡ Developed a real-time AI-powered attendance system using
-            OpenCV and K-Nearest Neighbors (KNN) for accurate face
-            recognition. Designed secure employee self-registration,
-            automated attendance tracking, admin analytics, monthly
-            absentee warnings, and interactive attendance visualization,
-            eliminating manual attendance processes.
-
+            ⚡ Developed face recognition pipelines utilizing OpenCV and KNN classification with role-based analytics in a sleek glassmorphic interface.
         </div>
 
         <div class="tech-tags">
@@ -750,26 +648,13 @@ capable of producing high-quality AI-assisted research reports.
             Intelligent Sales Forecasting & Business Analytics Platform
         </h4>
 
+        <!-- REPLACE IN PROJECT 4 -->
         <p class="project-description">
-
-            SalesForge AI is a modern AI-powered business intelligence platform
-            developed to analyze historical sales data, forecast future revenue,
-            visualize business performance, and deliver actionable insights
-            through interactive dashboards.
-
-            The platform leverages Machine Learning and Time-Series Forecasting
-            to help businesses make accurate, data-driven decisions.
-
+            Predictive analytics intelligence tool engineered to analyze historical business datasets, track KPI monitors, and forecast future revenue metrics.
         </p>
 
         <div class="highlight-box">
-
-            ⚡ Built an end-to-end AI Sales Forecasting platform using
-            Facebook Prophet, Streamlit, Pandas, Matplotlib, and Seaborn.
-            Designed interactive KPI dashboards, regional performance analysis,
-            monthly revenue forecasting, downloadable reports, and business
-            intelligence visualizations for strategic planning.
-
+            ⚡ Implemented end-to-end predictive time-series modeling using Facebook Prophet, Pandas, and interactive visualization dashboards.
         </div>
 
         <div class="tech-tags">
@@ -838,6 +723,10 @@ capable of producing high-quality AI-assisted research reports.
 </div>
 
 </div>
+<div class="projects-footer-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Click on any project's case study to broaden your knowledge and view deep architectures.</span>
+        </div>
 
 </section>
 <!-- ==========================================
@@ -1347,55 +1236,14 @@ EXPERIENCE
 
 
                 <p class="experience-description">
+    Engineered an end-to-end Multimodal AI Research Assistant utilizing Retrieval-Augmented Generation (RAG) and semantic search architectures to index multi-format knowledge assets.
+</p>
 
-                    Worked on Machine Learning, Generative AI,
-                    Large Language Models (LLMs), Prompt Engineering,
-                    Python, and SQL while building production-ready
-                    AI applications.
-
-                    During the internship, I engineered an end-to-end
-                    <strong>Multimodal AI Research Assistant</strong>
-                    capable of understanding PDFs, YouTube videos,
-                    and audio files using Retrieval-Augmented Generation,
-                    semantic search, and conversational AI.
-
-                </p>
-
-
-
-                <ul class="experience-points">
-
-                    <li>
-
-                        Developed an end-to-end Multimodal AI Research Assistant using LangChain, FastAPI, Streamlit, and Mistral AI.
-
-                    </li>
-
-                    <li>
-
-                        Built PDF RAG, Audio Transcription, and YouTube Analysis pipelines with semantic search capabilities.
-
-                    </li>
-
-                    <li>
-
-                        Integrated ChromaDB vector database for efficient embedding storage and contextual retrieval.
-
-                    </li>
-
-                    <li>
-
-                        Designed conversational AI workflows with intelligent summarization, action-item extraction, and contextual question answering.
-
-                    </li>
-
-                    <li>
-
-                        Optimized AI inference pipelines, improving response quality and overall application performance.
-
-                    </li>
-
-                </ul>
+<ul class="experience-points">
+    <li>Developed cross-modal processing pipelines using LangChain, FastAPI, Streamlit, and Mistral AI models.</li>
+    <li>Integrated ChromaDB vector store for optimized high-density semantic embedding storage and rapid contextual retrieval loops.</li>
+    <li>Optimized AI inference routines, noticeably lowering token latency and enhancing conversational query response accuracies.</li>
+</ul>
 
 
 
@@ -1502,50 +1350,14 @@ EXPERIENCE
 
 
                 <p class="experience-description">
+    Designed and deployed a highly responsive Car Consultancy Web Application enabling interactive multi-criteria parameter filtering and direct integration endpoints.
+</p>
 
-                    Designed and developed a responsive Car Consultancy
-                    Web Application allowing users to browse vehicles,
-                    compare prices, filter cars based on different
-                    criteria, and directly contact consultants through
-                    Email and WhatsApp.
-
-                </p>
-
-
-
-                <ul class="experience-points">
-
-                    <li>
-
-                        Built a responsive Car Consultancy Website using HTML, CSS, JavaScript, PHP, and MySQL.
-
-                    </li>
-
-                    <li>
-
-                        Developed an advanced filtering system for car brand, model, and pricing.
-
-                    </li>
-
-                    <li>
-
-                        Integrated Email and WhatsApp communication for direct customer interaction.
-
-                    </li>
-
-                    <li>
-
-                        Improved mobile responsiveness and overall UI/UX.
-
-                    </li>
-
-                    <li>
-
-                        Created an intuitive platform for exploring and comparing vehicles.
-
-                    </li>
-
-                </ul>
+<ul class="experience-points">
+    <li>Built custom, dynamic catalog architectures using raw HTML, CSS, JavaScript, procedural PHP, and MySQL backends.</li>
+    <li>Engineered complex server-side relational query indexing mechanisms for instantaneous, live product sorting metrics.</li>
+    <li>Integrated secure third-party communication channels including automated WhatsApp and Email client access hooks.</li>
+</ul>
 
 
 
