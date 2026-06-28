@@ -833,29 +833,19 @@ ABOUT SECTION
     background: transparent;
 }
 
-.about::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-        radial-gradient(circle at 20% 20%, rgba(0,217,255,.06), transparent 35%),
-
-        radial-gradient(circle at 80% 80%, rgba(79,70,229,.06), transparent 35%);
-
-    pointer-events:none;
-
-    z-index:-1;
-
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent; /* Removes all localized color glows entirely */
+    pointer-events: none;
+    z-index: -1;
 }
 
 .about-wrapper {
-    max-width: 900px; /* Brought down from 1100px for a more compact structure */
+    max-width: 1350px; /* Matched exactly to your project cards width for perfect alignment */
     margin: auto;
+    width: 100%;
 }
 
 .section-heading {
@@ -879,14 +869,15 @@ ABOUT SECTION
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 14px; /* Shrunk spacing gap from 28px */
-    margin-bottom: 40px; /* Reduced bottom gap from 90px */
+    gap: 16px; 
+    margin-bottom: 40px; 
+    text-align: left;
 }
 
 .about-text p {
-    font-size: 15px; /* Compacted text footprint down from 19px */
-    line-height: 1.6; /* Balanced height proportions */
-    color: #d7d7d7;
+    font-size: 16.5px; 
+    line-height: 1.7; 
+    color: #e2e8f0; 
 }
 
 .highlight {
